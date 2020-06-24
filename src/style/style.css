@@ -1,0 +1,222 @@
+.navbar {
+    z-index: 1;
+    position: relative;
+}
+
+.navbar-brand {
+    font-size: 32px;
+    font-family: 'Roboto',sans-serif;        
+}
+
+.nav-link {
+    margin-right: 10px; 
+    cursor: pointer;   
+}
+
+.button {
+    border-radius: 50px;
+}
+
+.jumbotron {
+    background-image: url('../assets/images/bg-image.jpg');
+    background-size: cover;
+    height: 250px;
+    position: relative;    
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .container {
+    text-align: center;
+    font-family: 'Roboto',sans-serif;        
+    margin-top: 50px;        
+    background-image: linear-gradient(to left,  #3dd8f5 ,#3dd8f5,white, white);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron .display-4 {
+    font-weight: 300;
+    font-size: 30px;     
+}
+
+.jumbotron .lead {
+    font-weight: 300;
+    font-size: 16px; 
+}
+
+.jumbotron .container span {
+    font-weight: 400;     
+}
+
+.minicard {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: -60px;
+    padding: 20px;    
+}
+
+.minicard img {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+
+}
+
+.minicard h4 {
+    font-size: 20px;    
+    font-family: 'Roboto', sans-serif;
+}
+
+.minicard p {
+    font-size: 15px;
+}
+
+.about h1 {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 25px;    
+}
+
+.about p {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 15px;
+    text-align: justify;
+}
+
+.about .pict img {
+    width: 100%;
+    border-radius: 0 30px 0 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.about .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;        
+}
+
+.about .profile span {
+    font-size: 15px;  
+    font-family: 'Poppins', sans-serif; 
+    margin-left: 10px;        
+}
+
+.profile a {
+    text-decoration: none;
+    color: black;                
+}
+
+.search h1 {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 25px;
+}
+
+.search input {
+    border-radius: 30px;
+}
+
+.search button {
+    border-radius: 30px;
+    background-image: linear-gradient(to left, #3dd8f5, #f53df4, #3dd8f5);
+    background-size: 200%;
+    color: white;
+}
+.search button:hover {
+    background-position: right;
+    color: white;
+}
+
+.list h3 {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 20px;
+}
+
+.list .nav-pills .nav-item .nav-link {
+    border-radius: 30px;  
+}
+
+ 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .jumbotron .container {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 10px;
+        color: white;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .navbar-brand {
+        color: white !important;
+    }
+    .navbar .nav-link {
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif; 
+        color: white !important;
+        text-shadow: 0 5px 5px rgba(0,0,0,0.6);       
+    }
+    .navbar .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid whitesmoke;
+        width: 70%;
+        margin: auto;
+        padding-bottom: 6px;
+        margin-top: -9px;        
+    }
+    .jumbotron {
+        height: 500px;
+        margin-top: -75px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+    }
+    .jumbotron .container {
+        margin-top: 100px;
+    }
+    .jumbotron .display-4 {
+        font-weight: 300;
+        font-size: 60px;
+    }
+    .jumbotron .container .lead {
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .minicard {
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        margin-top: -90px;
+        padding: 20px;
+    }
+    .movie .hover {
+        transition: 0.3s;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    .about h1 {
+        font-size: 35px;        
+    }
+    .about p {
+        font-size: 17px;      
+    }
+    .search h1 {
+        font-size: 35px;        
+    }
+    .list h3 {
+        font-size: 30px;        
+    }    
+
+}
